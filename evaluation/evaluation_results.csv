@@ -1,0 +1,16 @@
+scenario_id,category,query,intent,status,actual_response,response_time_seconds,observation
+EVAL-01,Relevansi Dasar,berapa jatah cuti tahunan saya?,faq,success,Halo! Karyawan tetap mendapatkan jatah 12 hari cuti tahunan. Jatah cuti tersebut baru dapat diambil setelah Anda melewati masa kerja minimal 3 bulan.,3.87,
+EVAL-02,Relevansi Dasar,gimana cara reset password vpn ya,faq,success,"Halo! Reset password VPN perusahaan dapat dilakukan secara mandiri melalui portal self-service IT. Selain itu, Anda juga dapat menghubungi tim IT Support jika akun Anda mengalami kendala terkunci.",2.31,
+EVAL-03,Parafrase/Sinonim,"saya lupa kata sandi laptop kantor, harus gimana?",faq,success,"Halo! Untuk mengatasi lupa password akun laptop kerja, silakan hubungi tim IT Support melalui tiket untuk melakukan *reset password*. Tim IT Support akan melakukan verifikasi identitas Anda terlebih dahulu sebelum proses *reset* dilakukan.",2.09,
+EVAL-04,Di Luar Cakupan,apakah kantor menyediakan tempat parkir motor gratis?,faq,success,"Mohon maaf, informasi mengenai fasilitas tempat parkir motor gratis tidak tersedia dalam sistem kami. Silakan hubungi tim HR atau IT Support untuk mendapatkan bantuan lebih lanjut.",2.74,
+EVAL-05,Di Luar Cakupan,siapa nama CEO perusahaan ini?,faq,success,"Maaf, informasi mengenai nama CEO perusahaan tidak tersedia di dalam sistem saya. Silakan hubungi tim HR atau IT Support untuk mendapatkan bantuan lebih lanjut terkait pertanyaan Anda.",2.87,
+EVAL-06,Tool Call Valid,apa status TICKET-0005?,ticket_status,success,"Tiket TICKET-0005 - Reset password VPN gagal terus
+Kategori : Access
+Status   : Diproses
+Update   : 2026-08-27",0.53,
+EVAL-07,Tool Call Invalid,apa status TICKET-9999?,ticket_status,success,Tiket TICKET-9999 tidak ditemukan. Pastikan nomor tiket sudah benar (format: TICKET-XXXX).,0.91,
+EVAL-08,Tool Call Ambigu,tiket saya gimana ya?,ticket_status,error,Mohon sertakan nomor tiket dengan format TICKET-XXXX (contoh: TICKET-0001).,0.73,
+EVAL-09,Routing Ambigu,kenapa laptop saya lambat dan gimana cara cek tiket yang saya buat soal itu?,faq,success,"Mohon maaf, informasi mengenai penyebab laptop lambat dan cara mengecek tiket yang sudah dibuat tidak tersedia di dalam sistem kami. Silakan hubungi tim IT Support secara langsung untuk mendapatkan bantuan lebih lanjut terkait kendala tersebut.",2.76,
+EVAL-10,Konsistensi,berapa hari cuti tahunan yang saya dapat?,faq,success,Halo! Karyawan tetap berhak mendapatkan jatah 12 hari cuti tahunan. Cuti tersebut dapat mulai diambil setelah Anda melewati masa kerja minimal 3 bulan.,7.04,
+EVAL-11,Beban Panjang,"Tolong jelaskan sedetail-detailnya seluruh kebijakan cuti, reset password, permintaan perangkat, dan proses onboarding sekaligus dalam satu jawaban.",faq,success,"Maaf, terjadi kendala teknis. Silakan coba lagi.",11.27,
+EVAL-12,Resource/Token,halo,unknown,error,"Maaf, saya tidak memahami permintaan Anda. Coba tanyakan seputar kebijakan HR/IT perusahaan, atau cek status tiket (format: TICKET-XXXX).",5.01,
